@@ -20,6 +20,7 @@ root.render(
     </div>
       <Experience />
       <Projects />
+      <Experience />
     </ParallaxProvider>
     
   </React.StrictMode>
