@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import About from './About';
-import Achievements from './Achievements';
+import About from './AboutSection';
+import Projects from './Projects';
 import reportWebVitals from './reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Experience from './Experience';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +18,8 @@ root.render(
       <About />
       </div>
     </div>
-      <Achievements />
+      <Experience />
+      <Projects />
     </ParallaxProvider>
     
   </React.StrictMode>

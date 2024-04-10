@@ -1,0 +1,55 @@
+.experience {
+    margin-top: 220px; /* Default margin-top value */
+    margin-inline: 20px;
+    /* Media query for phones */
+    @media (max-width: 768px) {
+      margin-top: 270px; /* Adjusted margin-top value for phones */
+    }
+  }
+  
+  .experience__title {
+    font-size: 100px;
+    margin-inline-start: 3vw;
+    @media (max-width: 768px) {
+        font-size: 15vw; 
+      }
+    
+}
+
+
+
+.ule {
+    list-style-type: none;
+  }
+  
+  .lie {
+    /* You need to turn on relative positioning so the line is placed relative to the item rather than absolutely on the page */
+    position: relative;
+    
+    /* Use padding to space things out rather than margins as the line would get broken up otherwise */
+    margin: 0;
+    padding-bottom: 5em;
+    padding-left: 20px;
+  }
+  
+  /* The actual line being placed before each list item, tweak width and color as appropriate */
+  .lie:before {
+    background-color: rgb(0, 0, 0);
+    width: 2px;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 5px;
+  }
+      
+  /* Start the line further down on the first list item */
+  .lie:first-child:before { top: 15px;  }
+  
+  /* Stop the line short on the final list item */
+  .lie:last-child:before { height: 10px; }
+      
+  /* Styles for the SVG bullet points */
+  .bullet { margin-left: -20px; width: 12px; fill: rgb(0, 0, 0); float: left; padding-right: 10px }
+  .bullet.big { width: 16px; margin-left: -22px; padding-right: 8px }
+  
