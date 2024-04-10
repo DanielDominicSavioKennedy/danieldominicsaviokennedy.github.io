@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  scroll-behavior:smooth /* Enable smooth scrolling */
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.plx{
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.plx > :first-child {
+  width: 100%;
 }

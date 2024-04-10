@@ -2,12 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import About from './About';
+import Achievements from './Achievements';
 import reportWebVitals from './reportWebVitals';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ParallaxProvider>
+      <div>
+      <App />
+      <div className="plx">
+      <About />
+      </div>
+    </div>
+      <Achievements />
+    </ParallaxProvider>
+    
   </React.StrictMode>
 );
 
