@@ -4,7 +4,7 @@
   white-space: nowrap;
   padding: 2vw;
   padding-left: 0;
-  .card {
+  .cardC {
     display: inline-block;
   }
 }
@@ -14,7 +14,7 @@
   flex-wrap: nowrap;
   overflow-x: auto;
 
-  .card {
+  .cardC {
     flex: 0 0 auto;
   }
 }
@@ -29,8 +29,7 @@
   }
 }
 
-.card{
-  background-color: aqua;
+.cardC{
   height: 400px;
   width: 350px;
   margin: 2vw;
@@ -38,8 +37,8 @@
   position: relative;
   padding: 20px;
   z-index: 1;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
-  transition: transform 0.6s, box-shadow 14s; 
+  box-shadow: 10px 7px 18px rgb(104 104 104); /* Initial shadow */
+  transition: transform 0.6s, box-shadow 14s;
 }
 
 .main_c{
@@ -52,17 +51,18 @@
   padding: 10px;
   padding-left: 20px;
   margin: 0%;
-  font-size: 100px;
+
   box-shadow: 0 3px 12px white;
-  @media (max-width: 768px) {
-      font-size: 15vw; 
-      z-index: 0;
-    }
+
 }
 
 .main_c p{
+  font-size: 100px;
   margin: 0;
-
+  @media (max-width: 768px) {
+    font-size: 15vw; 
+    z-index: 0;
+  }
 }
 
 .sub_main_c{
@@ -71,11 +71,11 @@
 }
 
 
-.card:hover {
+.cardC:hover {
   transform: scale(1.05); /* Slightly scale up on hover */
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
   /* Additional styles for the dark background */
-  background-color: #333;
+  box-shadow: inset 0px 21px 0px 176px rgb(0 0 0 / 76%);
   color: #fff;
 }
 
@@ -91,4 +91,33 @@
   background-color: white;
   color: black;
   box-shadow: 0 0px 0px white;
+}
+
+.mainP{
+  margin-block-end: 10%;
+}
+
+.hiddenText {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardC:hover .hiddenText {
+  display: block;
+}
+
+.custom-link {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove default underline */
+}
+
+.custom-link:hover {
+  color: white; /* Maintain white color on hover */
+}
+
+.custom-link:visited {
+  color: white; /* Maintain white color for visited links */
 }

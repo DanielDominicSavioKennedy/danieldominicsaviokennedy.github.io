@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
-import { Image } from 'react-bootstrap';
+import '../css/App.css';
 import { TypeAnimation } from 'react-type-animation';
-import testImage from './p_sketch.png'; // Import the image file
+import testImage from '../img/p_sketch.png';
 import {BsFileEarmarkPdf} from 'react-icons/bs';
 
 function App() {
@@ -31,12 +30,13 @@ function App() {
           
         </div>
         <div style={{padding: '18px', margin: '10px'}}>
-          <BsFileEarmarkPdf  />
+        <a href="https://drive.google.com/file/d/19LrtIPMwCWGDRKa4osClyPYeCWhob6Ci/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='resume-link '><BsFileEarmarkPdf  /> Resume</a>
+          
         </div>
       </div>
       <div className="Appm">
         <div className="ccontainer" >
-          <Image src={testImage} fluid className="cimage" />
+          <img src={testImage} fluid className="cimage" />
         </div>
         <div className="marquee">
           <span>

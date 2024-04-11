@@ -169,3 +169,13 @@
   margin-top: 2%;
   margin-inline: 2%;
 }
+
+
+.resume-link {
+  color: inherit; /* Use the default text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.resume-link:hover {
+  color: inherit; /* Use the default text color on hover */
+}

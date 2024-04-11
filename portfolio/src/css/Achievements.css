@@ -1,0 +1,89 @@
+.achievements{
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  margin: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.281);
+  box-shadow: 6px -2px 33px rgb(104 104 104);
+}
+
+.title{
+  font-size: 100px;
+  margin: 0;
+  margin-top: -1px;
+  @media (max-width: 768px) {
+      font-size: 12vw; 
+    }
+}
+
+.line {
+  width: 96%;
+  background-color: rgb(108, 108, 108);
+  height: 2px;
+  margin: 6px;
+}
+.line2 {
+  width: 96%;
+  background-color: black;
+  height: 2px;
+}
+
+.main_paper{
+    margin-inline: 20px;
+    text-align: justify;
+
+
+    @media (max-width: 540px) {
+        margin-inline: 10px;
+      }
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .scrolldown-wrapper {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+}
+  
+.scrolldown {
+	border: 2px solid #FFFFFF;
+	border-radius: 30px;
+	height: 46px;
+	margin: 0 auto 8px;
+	text-align: center;
+	width: 30px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: #FFFFFF;
+}
+  
+.scrolldown-p2 {
+	animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+	}
+}

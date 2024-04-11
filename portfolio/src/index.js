@@ -1,27 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import About from './AboutSection';
-import Projects from './Projects';
+import App from './components/App';
+import About from './components/AboutSection';
+import Projects from './components/Projects';
 import reportWebVitals from './reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Experience from './Experience';
+import Experience from './components/Experience';
+import Achievements from './components/Achievements';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ParallaxProvider>
-      <div>
+      
       <App />
       <div className="plx">
       <About />
       </div>
-    </div>
+    
       <Experience />
       <Projects />
-      <Experience />
+      <div className="plx achieve">
+      <Achievements />
+      </div>
     </ParallaxProvider>
+   
     
   </React.StrictMode>
 );

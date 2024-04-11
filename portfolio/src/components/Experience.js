@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Experience.css"
+import "../css/Experience.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 

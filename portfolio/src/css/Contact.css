@@ -1,0 +1,31 @@
+.contact-me {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    padding: 80px 0; /* Add padding for spacing */
+    margin-top: 200px;
+}
+
+.contact-me h2, .contact-me h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info, .contact-form {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+/* Add animation to contact info and form */
+.contact-info, .contact-form {
+    animation: fadein 1s ease forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+

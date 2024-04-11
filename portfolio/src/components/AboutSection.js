@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsLinkedin, BsInstagram, BsGithub, BsEnvelope } from 'react-icons/bs';
 import { Parallax } from 'react-scroll-parallax';
-import "./About.css"
+import "../css/About.css"
 
 const About = () => {
   return (
