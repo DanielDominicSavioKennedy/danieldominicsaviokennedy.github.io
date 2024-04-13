@@ -12,7 +12,7 @@ function App() {
       
       <div className="cname">
         <div className="name" style={{ display: 'inline-block' }}>
-          <p style={{ display: 'inline', fontFamily: 'Abril Fatface, serif' }} >Daniel Dominic Savio Kennedy | </p>
+          <p style={{ fontFamily: 'Abril Fatface, serif' }} className='text_data' >Daniel Dominic Savio Kennedy | </p>
           <TypeAnimation
             sequence={[
               "Web Developer",
@@ -29,8 +29,8 @@ function App() {
           />
           
         </div>
-        <div style={{padding: '18px', margin: '10px'}}>
-        <a href="https://drive.google.com/file/d/19LrtIPMwCWGDRKa4osClyPYeCWhob6Ci/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='resume-link '><BsFileEarmarkPdf  /> Resume</a>
+        <div style={{padding: '18px', margin: '10px',display: 'inline-flex'  }}>
+        <a href="https://drive.google.com/file/d/19LrtIPMwCWGDRKa4osClyPYeCWhob6Ci/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='resume-link '><BsFileEarmarkPdf  /><p>Resume</p></a>
           
         </div>
       </div>

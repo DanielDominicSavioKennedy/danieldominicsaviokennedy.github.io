@@ -4,29 +4,25 @@
   white-space: nowrap;
   padding: 2vw;
   padding-left: 0;
-  .cardC {
-    display: inline-block;
-  }
 }
 
 .scrolling-wrapper-flexbox {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+}
 
-  .cardC {
-    flex: 0 0 auto;
-  }
+.cardC {
+  display: inline-block;
+  flex: 0 0 auto;
 }
 
 .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
 }
 
-.scrolling-wrapper {
-  &::-webkit-scrollbar {
-    display: none;
-  }
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .cardC{
@@ -44,7 +40,7 @@
 .main_c{
   background-color: white;
   position: absolute;
-  z-index: 3;
+  z-index: 0;
   height: 500px;
   width: 350px;
   width: auto;
@@ -53,7 +49,6 @@
   margin: 0%;
 
   box-shadow: 0 3px 12px white;
-
 }
 
 .main_c p{
@@ -61,7 +56,6 @@
   margin: 0;
   @media (max-width: 768px) {
     font-size: 15vw; 
-    z-index: 0;
   }
 }
 

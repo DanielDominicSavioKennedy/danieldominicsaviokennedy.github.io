@@ -8,23 +8,24 @@ import reportWebVitals from './reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ParallaxProvider>
+    
       
       <App />
       <div className="plx">
+      <ParallaxProvider>
       <About />
+      </ParallaxProvider>
       </div>
     
       <Experience />
       <Projects />
-      <div className="plx achieve">
       <Achievements />
-      </div>
-    </ParallaxProvider>
+      <Footer />
    
     
   </React.StrictMode>

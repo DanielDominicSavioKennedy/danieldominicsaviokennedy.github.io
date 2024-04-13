@@ -31,7 +31,7 @@ const Experience = () => {
     </li>
 
     <li className='lie' style={{marginTop:'-1.5em'}}>
-      <div class="bullet">
+      <div class="bullet bullet2">
         <svg aria-hidden="true" viewBox="0 0 32 32" focusable="false"><circle stroke="none" cx="16" cy="16" r="10"></circle></svg>
       </div>
       <lia data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >

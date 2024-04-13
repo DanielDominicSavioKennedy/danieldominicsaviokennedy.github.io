@@ -1,4 +1,3 @@
-import React, { useRef, useEffect } from 'react';
 import '../css/Achievements.css';
 import a1 from '../img/a1.png';
 import a2 from '../img/a2.png';
@@ -6,33 +5,18 @@ import a3 from '../img/a3.jpg';
 import a4 from '../img/a4.jpg';
 import a5 from '../img/a5.jpg';
 import a6 from '../img/a6.jpg';
+import a7 from '../img/a7.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Parallax } from 'react-scroll-parallax';
-import Contact from './Contact';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+AOS.init()
+
 
 function Achievements  () {
-  const targetRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const targetElement = targetRef.current;
-      if (!targetElement) return;
-
-      const { top } = targetElement.getBoundingClientRect();
-      if (top <= window.innerHeight && window.scrollY > 0) {
-        // If the top of the target element is within the viewport and user has scrolled down
-        window.scrollTo({ top: top - window.innerHeight, behavior: 'smooth' });
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
   return (
-    <Parallax speed={15} translateY={[1, -100]} tagOuter="figure">
-    <div className="achievements">
+    <div className="achievements" data-aos="fade-up">
       
       <div className="title text-center" style={{ fontFamily: 'Abril Fatface, serif' }}>Achievements</div>
       
@@ -67,7 +51,7 @@ function Achievements  () {
 
             <div class="row">
               <h3>HackForHire</h3>
-              <img src={a1} alt="" />
+              <img src={a7} alt="" />
               <p>
               Secured 3rd place in the prestigious HackForHire Hackathon.
 Delivered a standout project, garnering recognition for creativity and technical proficiency.
@@ -128,13 +112,7 @@ Highlighted proficiency in competitive programming and ability to deliver under 
     </div>
     </div>
 
-<br /><br /><br /><br /><br /><br />
-    <div ref={targetRef}>
-          <h2></h2>
-        </div>
 
-
-    </Parallax>
   );
 }
 
