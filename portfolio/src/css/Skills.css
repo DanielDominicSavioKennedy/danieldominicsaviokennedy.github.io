@@ -1,0 +1,60 @@
+.skills {
+  padding-inline: 20px;
+  margin: 0;
+}
+
+.skills__title {
+  font-size: 100px;
+  margin-inline-start: 3vw;
+}
+
+@media (max-width: 768px) {
+  .skills__title {
+    font-size: 15vw;
+  }
+}
+
+/* Card */
+.skill-card {
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Same style as Experience headings */
+.skill-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* Chip container */
+.skill-chip-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual skill chip */
+.skill-chip {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #000;
+  background-color: transparent;
+  text-align: left;
+  white-space: nowrap;
+
+}
+
+.skill-chip:hover {
+  background-color: #000000;
+  color: #fff;
+  text-align: left;
+  white-space: nowrap;
+
+}

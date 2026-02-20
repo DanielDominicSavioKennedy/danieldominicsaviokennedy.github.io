@@ -6,14 +6,19 @@ import a4 from '../img/a4.jpg';
 import a5 from '../img/a5.jpg';
 import a6 from '../img/a6.jpg';
 import a7 from '../img/a7.jpg';
+import iccce from '../img/ICCCE_Cover.jpg';
+import iccce_pp from '../img/ICCCE_pp.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 AOS.init()
 
 
 function Achievements  () {
+
+  const today = new Date();
 
   return (
     <div className="achievements" data-aos="fade-up">
@@ -23,7 +28,16 @@ function Achievements  () {
       <div className="d-flex justify-content-center align-items-center">
        <p className='line'></p>
       </div>
-      
+
+      <div className="d-flex justify-content-center align-items-center pb-2">
+        <div className="text-muted small" class="fw-bold">
+          {today.getFullYear()} |{" "}
+          {today.toLocaleString("en-US", { month: "short" })} |{" "}
+          {today.toLocaleString("en-US", { weekday: "long" })} |{" "}
+          {today.getDate()}
+        </div>
+      </div>
+
       <div className="d-flex justify-content-center align-items-center">
        <p className='line2'></p>
       </div>
@@ -104,9 +118,27 @@ Highlighted proficiency in competitive programming and ability to deliver under 
               Participated in INNOVATIO Hackathon 2023, demonstrating adept problem-solving and innovation, contributing valuable insights and solutions to the competition.
               </p>
             </div>
-
             
         </div>
+
+            <div class="row">
+              <h3>ICCCE Publication (2024)</h3>
+              <div class="col-md-3">
+              In 2024, I had the opportunity to present my research paper, “Linguistic Sensitivity Upgrade: AI-Enabled Normalization of Offensive Text,” at the International Conference on Communications and Cyber Physical Engineering 2024. The paper was published in the Proceedings of the 7th International Conference on Communications and Cyber Physical Engineering and explores the use of artificial intelligence and natural language processing techniques to identify, normalize, and mitigate offensive language in digital communication. The research emphasizes the importance of ethical AI and linguistic sensitivity in designing responsible, inclusive, and socially aware communication systems, highlighting AI’s growing role in shaping safer online interactions.
+              <br /> <a href="https://link.springer.com/chapter/10.1007/978-981-95-0269-1_204"  rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                SpringerLink <FaExternalLinkAlt />
+               </a>
+              </div>
+
+              <div class="col-md-6">
+              <p>
+              <img src={iccce_pp} alt="" />
+              </p>
+              </div>
+              <div class="col-md-3">
+                <img src={iccce} alt="" />
+              </div>
+            </div>
         
       </div>
     </div>

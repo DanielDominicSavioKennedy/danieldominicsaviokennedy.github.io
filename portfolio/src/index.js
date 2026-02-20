@@ -9,6 +9,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
 import Footer from './components/Footer';
+import Skills from './components/Skills'; // SOC on 20/2/26
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
       </div>
     
       <Experience />
+      <Skills />
       <Projects />
       <Achievements />
       <Footer />

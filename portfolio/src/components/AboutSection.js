@@ -10,7 +10,11 @@ const About = () => {
     <p className="about" style={{fontFamily: 'Abril Fatface, serif', margin:0 }} >About..</p>
       <h2 style={{margin:0}}>Welcome to Dominic Savio's world of wonder!</h2>
       <p>
-        I'm Dominic Savio, your friendly neighborhood tech wizard and melody magician. With a passion for AI, Web Development, and Designing, I'm like Django on a musical TensorFlow ride! When I'm not weaving code spells or conjuring up digital delights, you'll find me strumming strings and hitting high notes as a musician extraordinaire. Got a challenge? Bring it on! I thrive on turning problems into punchlines and projects into parties. Let's collaborate, innovate, and create something epic together. So, grab your coding wand and join me on this wild ride of tech-tastic adventures!
+      Hi, I’m Dominic Savio, an AI-focused software engineer passionate about building intelligent systems and scalable applications. I work on training and fine-tuning AI models, developing AI agents that automate workflows and support smart decision-making, and integrating them into modern, real-world products.
+      <br />
+      I enjoy solving complex problems and turning ambitious ideas into practical solutions. From backend architecture to intelligent agent orchestration, I like building systems that are efficient, impactful, and built to scale.
+      <br />
+      Turning problems into punchlines and projects into parties, I believe tech should be powerful but also exciting. Let’s collaborate, innovate, and create something epic together. Join me on this wild ride of tech-tastic adventures. 
       </p>
       <div className="social" style={{ display: 'flex', gap: '10px', justifyContent:'end' }}> 
       <a href="https://www.linkedin.com/in/daniel-dominic-savio-kennedy-9180831aa/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
