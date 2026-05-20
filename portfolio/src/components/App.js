@@ -30,7 +30,7 @@ function App() {
           
         </div>
         <div style={{padding: '18px', margin: '10px',display: 'inline-flex'  }}>
-        <a href="https://drive.google.com/uc?export=download&id=1V_hug5Rk9KwbUj6nIvLOUTs1Xr0Yu3zA" target="_blank" rel="noopener noreferrer" className='resume-link '><BsFileEarmarkPdf  /><p>Resume</p></a>
+        <a href="https://drive.google.com/drive/folders/1b0Rjb2lRkTqlXHTxK3aqGie0aEI72t2j?usp=sharing" target="_blank" rel="noopener noreferrer" className='resume-link '><BsFileEarmarkPdf  /><p>Resume</p></a>
           
         </div>
       </div>
